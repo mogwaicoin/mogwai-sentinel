@@ -31,7 +31,7 @@ Make sure the local Mogwai daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/mogwai/sentinel.git && cd sentinel
+    $ git clone https://github.com/mogwaicoin/mogwai-sentinel.git && cd mogwai-sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
