@@ -28,7 +28,8 @@ class MogwaiConfig():
     @classmethod
     def get_rpc_creds(self, data, network='mainnet'):
         # get rpc info from mogwai.conf
-        match = re.findall(r'rpc(user|password|port)=(.*?)$', data, re.MULTILINE)
+        # match = re.findall(r'rpc(user|password|port)=(.*?)$', data, re.MULTILINE)
+        match = re.findall(r'rpc(user|password|port)=(\S*?)\s*$', data, re.MULTILINE)
 
         # python >= 2.7
         creds = {key: value for (key, value) in match}
