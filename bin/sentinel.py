@@ -218,7 +218,7 @@ def main():
     prune_expired_proposals(mogwaid)
 
     # create a Superblock if necessary
-    attempt_superblock_creation(mogwaid)
+    #attempt_superblock_creation(mogwaid)
 
     # schedule the next run
     Scheduler.schedule_next_run()
